@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .sidenav {
+            height: 100%;
+        }
+        #logo {
+            height: 65px; /* Change this to your desired height */
+            width: 80px;  /* Change this to your desired width */
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .container {
+            padding-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 50px;
+            padding-left: 50px;
+        }
+
+        .story {
+            flex: 1;
+            margin-right: 50px;
+        }
+
+        .image {
+            flex: 1;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Responsive Navbar */
+        @media screen and (max-width: 992px) {
+            .container {
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+        }
+
+        /* Responsive Footer */
+        @media screen and (max-width: 600px) {
+            .page-footer {
+                padding: 20px;
+            }
+            .page-footer ul {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo"><img id="logo" src="D:\CCA FRONT_END\logo.jpg" alt="Logo"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="story">
+            <h2>Happy Customer </h2>
+            <p>Here is a story about a happy customer. They found our products to be of high quality and our service to be exceptional. They have recommended us to their friends and family and continue to be a loyal customer.</p>
+        </div>
+        <div class="image">
+            <img src="D:\CCA FRONT_END\CCAFINAL.html\happy face.jpg" alt="Happy Customer">
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Our Products</h1>
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="D:\CCA FRONT_END\social-listening-9.jpeg" alt="Product 1">
+                    </div>
+                    <div class="card-content">
+                        <p>Social Media Listening Tool: Enhance your platform with a tool that monitors social media conversations beyond brand mentions. This tool can track industry keywords, trending topics, and competitor activities, providing valuable insights for content creation and strategy adjustments.Rs.499</p>
+                        <a href="2.html" class="waves-effect waves-light btn">Buy Now</a> <!-- Buy button -->
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="D:\CCA FRONT_END\1.html" alt="Product 2">
+                    </div>
+                    <div class="card-content">
+                        <p>Influencer Relationship Management (IRM): Develop a feature that helps businesses identify, connect with, and manage relationships with influencers relevant to their industry. This could include influencer discovery tools, outreach templates, and performance tracking for influencer campaigns.Rs.799</p>
+                        <a href="2.html" class="waves-effect waves-light btn">Buy Now</a> <!-- Buy button -->
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="D:\CCA FRONT_END\main-qimg-8d225dc92cbc801b49d4cffb563a7124-lq.jpg" alt="Product 3">
+                    </div>
+                    <div class="card-content">
+                        <p>Social Media Ad Management: Integrate tools for creating, managing, and optimizing social media advertising campaigns. This could include features for ad creation, audience targeting, budget management, and performance tracking across various ad platforms like Facebook Ads, Instagram Ads, Twitter Ads, etc.Rs.999</p>
+                        <a href="2.html" class="waves-effect waves-light btn">Buy Now</a> <!-- Buy button -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Want More</h5>
+                    <p class="grey-text text-lighten-4">You can click on the links as per your requirements.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Email</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Information</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Security</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Terms of Use</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">How to Cancel Subscription</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
+</html>
